@@ -1,0 +1,193 @@
+html {
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+}
+
+body {
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: BadScript;
+  src: url("BadScript-Regular.ttf");
+}
+
+@font-face {
+  font-family: MoonDance;
+  src: url("MoonDance-Regular.ttf");
+}
+
+@font-face {
+  font-family: Ole;
+  src: url("Ole-Regular.ttf");
+}
+
+.title {
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #110530;
+  font-family: MoonDance;
+  font-size: 140px;
+  width: 400;
+  height: 100;
+}
+.label {
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: #110530;
+  font-family: MoonDance;
+  font-size: 45px;
+  width: 400;
+  height: 100;
+}
+
+.cloud {
+  width: 210px;
+  height: 72px;
+  background: #eceff1;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 60px;
+}
+.cloud::after,
+.cloud::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: inherit;
+  border-radius: inherit;
+}
+.cloud::after {
+  width: 60px;
+  height: 60px;
+  top: -70px;
+  left: -70px;
+}
+.cloud::before {
+  width: 108px;
+  height: 108px;
+  top: -50px;
+  left: 80px;
+}
+
+.water {
+  width: 1800;
+  height: 150;
+  border-radius: 0px;
+  background: #2a93d5;
+  overflow-y: hidden;
+}
+
+.ground {
+  width: 700;
+  height: 60;
+  z-index: 6;
+  position: absolute;
+  border-radius: 100px;
+  background: #126948;
+  overflow-y: hidden;
+}
+
+.trunk {
+  width: 10;
+  height: 100;
+  position: absolute;
+  left: 35;
+  top: 40;
+  z-index: 1;
+  background: #36290b;
+}
+
+.leaves1 {
+  width: 80;
+  height: 80;
+  position: absolute;
+  z-index: 3;
+  border-radius: 60px;
+  background: #1d963b;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.leaves2 {
+  width: 90;
+  height: 90;
+  position: absolute;
+  top: -5;
+  left: -5;
+  z-index: 3;
+  border-radius: 60px;
+  background: #25b94a;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.bush1 {
+  width: 75;
+  height: 75;
+  position: absolute;
+  z-index: 0;
+  border-radius: 60px;
+  background: #25b94a;
+}
+
+.mountainback {
+  width: 0;
+  height: 0;
+  border-left: 230px solid transparent;
+  border-right: 230px solid transparent;
+  border-bottom: 280px solid #3b3b3b;
+}
+
+.mountainfront {
+  width: 0;
+  height: 0;
+  border-left: 180px solid transparent;
+  border-right: 180px solid transparent;
+  border-bottom: 190px solid #5e5e5e;
+}
+
+.snowfront {
+  width: 0;
+  height: 0;
+  border-left: 36px solid transparent;
+  border-right: 36px solid transparent;
+  border-bottom: 38px solid #e2e2e2;
+}
+
+.snowback {
+  width: 0;
+  height: 0;
+  border-left: 46px solid transparent;
+  border-right: 46px solid transparent;
+  border-bottom: 56px solid #e2e2e2;
+}
+
+.snowfrontbubbles {
+  width: 25;
+  height: 12;
+  background: #e2e2e2;
+  border-radius: 0 0 40px 40px;
+}
+
+.snowbackbubbles {
+  width: 35;
+  height: 17;
+  background: #e2e2e2;
+  border-radius: 0 0 40px 40px;
+}
+
+.waves {
+  width: 90;
+  height: 10;
+  border-radius: 40px;
+  background: #6ebdee;
+}
